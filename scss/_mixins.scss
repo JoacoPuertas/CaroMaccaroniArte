@@ -28,3 +28,64 @@
     justify-content: $justify;
     align-items: $align;
 }
+
+//NAV
+nav {
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente el grupo de enlaces */
+    align-items: center; /* Centrar verticalmente el grupo de enlaces */
+    background-color: #fff; /* Añade un color de fondo si lo deseas */
+    .nav {
+        display: flex;
+        align-items: center; /* Centrar los elementos hijos verticalmente */
+    }
+    .burger {
+        width: 4vw;
+    }
+    ul {
+        margin: 0;
+        padding: 0;
+        display: flex; /* Utilizamos flexbox para los elementos de la lista */
+        list-style: none; /* Quitamos los puntos de la lista */
+    }
+    .nav-link {
+        text-decoration: none;
+        color: black; /* Cambia el color de los enlaces según lo necesites */
+        margin: 0 10px; /* Añade márgenes entre los enlaces si lo deseas */
+      }
+    
+}
+//HOME
+.contenedor {
+    max-width: 30%;
+    height: 350px; /* Altura fija para los contenedores */
+    display: flex; /* Utilizamos flexbox para alinear y centrar las imágenes */
+    align-items: center; /* Alinear verticalmente las imágenes */
+    justify-content: center; /* Centrar horizontalmente las imágenes */
+    overflow: hidden; /* Ocultar cualquier parte de la imagen que exceda el contenedor */
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    img {
+        width: 100%; /* Asegúrate de que la imagen ocupe todo el espacio disponible */
+        height: auto; /* Permitir que la altura se ajuste automáticamente para mantener la proporción */
+    }
+}
+
+//FOOTER
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a {
+        list-style: none;
+        text-decoration: none;
+    }
+    div {
+        display: flex;
+        justify-content: space-between;
+        width: 20%;
+    }
+}
+.icons {
+    width: 60px;
+    height: 60px;
+}
